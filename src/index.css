@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+:root{
+ -webkit-font-smoothing: antialiased; 
+}
+
 @theme{
   --color-purple: #3c50e0;
   --color-purble-hover: #5c6cdc;
   --color-lightBlue-50: #f1f5f9;
-  --default-font-family: "Roboto";
+  --default-font-family: "Plus Jakarta Sans";
 }
 

@@ -7,7 +7,10 @@ export function SingUp(){
     <div className="flex items-center justify-center h-screen  bg-lightBlue-50" >
     <div className="flex items-center gap-25 shadow-xl border-1 border-zinc-300 rounded-xl px-25 py-15 bg-zinc-50">
       <div className="flex flex-col gap-6 ">
-        <h1 className="mb-3 text-4xl font-bold text-zinc-700">Cadastre-se</h1>
+        <div>
+          <h1 className="mb-3 text-4xl font-bold text-zinc-700">Cadastre-se</h1>
+          <span className="text-sm text-zinc-500">Faça seu cadastro gratuitamente abaixo</span>
+        </div>
         <form className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <div className="w-lg flex flex-col gap-1">

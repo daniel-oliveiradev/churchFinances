@@ -1,7 +1,15 @@
-import { SingUp } from "./pages/SingUp";
+import { SideMenu } from "./components/SideBar"
+import { Dashboard } from "./pages/Dashboard"
+import { SingIn } from "./pages/SingIn"
+import { SingUp } from "./pages/SingUp"
 
 export function App(){
   return(
-    <SingUp/>
+    <div>
+      <SideMenu/>
+      <Dashboard/>
+
+     
+    </div>
   )
 }

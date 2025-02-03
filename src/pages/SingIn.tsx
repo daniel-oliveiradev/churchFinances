@@ -8,7 +8,7 @@ export function SingIn(){
       <div className="flex items-center gap-25 shadow-xl border-1 border-zinc-300 rounded-xl px-25 py-15 bg-zinc-50">
         <div className="flex flex-col items-center gap-6 ">
           <Logo/>
-          <h2 className="font-regular text-zinc-500">Cadastre-se agora e comece a gerir as finançãs de sua igreja.</h2>
+          <h2 className="font-regular text-zinc-500 w-md text-center">Comece a gerir as finanças de sua igreja agora mesmo, faça login ou cadastre-se.</h2>
           <SingInPhone/>
         </div>
 
