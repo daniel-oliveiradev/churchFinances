@@ -1,4 +1,4 @@
-export function FlatPhone(){
+export function SingInPhone(){
   return(
     <svg
     width="350"

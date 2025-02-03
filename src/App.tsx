@@ -1,7 +1,7 @@
-import { SingIn } from "./pages/SingIn";
+import { SingUp } from "./pages/SingUp";
 
 export function App(){
   return(
-    <SingIn/>
+    <SingUp/>
   )
 }

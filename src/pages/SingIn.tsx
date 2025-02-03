@@ -1,6 +1,6 @@
 import { Lock, User } from "lucide-react"
 import { Logo } from "../components/Logo"
-import { FlatPhone } from "../components/phone"
+import { SingInPhone } from "../components/SingInPhone"
 
 export function SingIn(){
   return(
@@ -9,7 +9,7 @@ export function SingIn(){
         <div className="flex flex-col items-center gap-6 ">
           <Logo/>
           <h2 className="font-regular text-zinc-500">Cadastre-se agora e comece a gerir as finançãs de sua igreja.</h2>
-          <FlatPhone/>
+          <SingInPhone/>
         </div>
 
         <div className="w-0.5 h-150 bg-zinc-300"/>
