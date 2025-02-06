@@ -3,7 +3,7 @@ import logoIcon from "../images/logo/logo-icon.svg"
 
 export function SideMenu(){
   return(
-    <aside className=" fixed flex flex-col gap-8 items-center p-2 w-14 h-screen border-r-1 border-zinc-300 bg-zinc-50">
+    <aside className=" fixed flex flex-col gap-8 items-center p-2 w-14 h-screen z-30 border-r-1 border-zinc-300 bg-zinc-50">
     <a href="#">
       <img 
         src={logoIcon} 
