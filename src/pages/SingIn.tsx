@@ -1,6 +1,8 @@
 import { Lock, User } from "lucide-react"
 import { Logo } from "../components/Logo"
 import { SingInPhone } from "../components/SingInPhone"
+import { Input } from "../components/Input"
+import { Button } from "../components/Button"
 
 export function SingIn(){
   return(
@@ -17,24 +19,34 @@ export function SingIn(){
         <div className="flex flex-col gap-6 ">
           <h1 className="mb-3 text-4xl font-bold text-zinc-700">Sing-in</h1>
           <form className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4">
-              <div className="w-lg flex flex-col gap-1">
-                <label htmlFor="nickname" className="text-zinc-600 font-semibold"> E-mail </label>
-                <div className="w-auto flex gap-3 items-center p-3 border-1 border-zinc-200 rounded-md">
-                  <User className="w-5 h-5 text-zinc-500"/>
-                  <input className="outline-0 w-full text-zinc-700" type="text" id="ninckname" placeholder="Nome de usuário"/>
-                </div>
-              </div>
-              <div className="w-lg flex flex-col gap-1">
-                  <label htmlFor="password" className="text-zinc-600 font-semibold"> Senha </label>
-                  <div className="w-auto flex gap-3 items-center p-3 border-1 border-zinc-200 rounded-md">
-                    <Lock className="w-5 h-5 text-zinc-500"/>
-                    <input className="outline-0 w-full text-zinc-700" type="password" id="password" placeholder="Digite sua senha"/>
-                  </div>
-              </div>
+            <div className="w-md flex flex-col gap-4">
+              <Input
+                id="user"
+                label="Usuário"
+                placeholder="Nome de usuário"
+                type="text"
+                size="full"
+              >
+                <User className="w-5 h-5 text-zinc-500"/>
+              </Input>
+              
+              <Input
+                id="password"
+                label="Senha"
+                placeholder="Digite sua senha"
+                type="password"
+                size="full"
+              >
+                <Lock className="w-5 h-5 text-zinc-500"/>
+              </Input>
             </div>
-            
-          <button type="submit" className="bg-purple font-light text-xl rounded-md p-3 cursor-pointer hover:bg-purble-hover transition-all text-zinc-50">Entrar</button>
+
+            <Button 
+              label="Entrar"
+              color="purple" 
+              padding="3"
+              onClick={() => {} }
+            />
           </form>
 
           <span className="text-zinc-500 mt-5">Não tem conta? <a href="#" className="font-semibold text-zinc-700 hover:text-purple transition-all">Cadastre-se agora</a></span>

@@ -3,7 +3,7 @@ import { SideMenu } from "./components/SideBar"
 // import { Dashboard } from "./pages/Dashboard"
 // import { SingIn } from "./pages/SingIn"
 // import { SingUp } from "./pages/SingUp"
-import { TithersAdd } from "./pages/TithersAdd"
+import { Tithers } from "./pages/Tithers"
 
 
 export function App(){
@@ -14,8 +14,8 @@ export function App(){
 
       <SideMenu/>
       <Header/>
-      <TithersAdd/>
-      {/* <Dashboard/> */}
+      <Tithers/>
+      
      
     </div>
   )
