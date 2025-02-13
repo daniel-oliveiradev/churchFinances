@@ -15,7 +15,7 @@ export const Input: FunctionComponent<InputProps> = ({children, textSize, placeh
     <div className="flex flex-col gap-1">
       <label 
         htmlFor={id}
-        className="text-zinc-600 font-semibold"
+        className="text-zinc-600 font-semibold mt-2"
       >
         {label}
       </label>

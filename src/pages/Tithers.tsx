@@ -7,14 +7,17 @@ import { Button } from "../components/Button";
 
 
 export function Tithers(){
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   
   return(
     <div className="ml-14 p-5 bg-lightBlue-50 h-screen"> 
       <div className="flex items-center gap-3 mt-20">
-        <div className=" min-h-198 w-full p-6 bg-zinc-50 border-1 border-zinc-200 rounded-md shadow">
+        <div className=" min-h-198 max-h-198 w-full p-6 bg-zinc-50 border-1 border-zinc-200 rounded-md shadow overflow-y-scroll [&::-webkit-scrollbar]:w-1.5
+            [&::-webkit-scrollbar-thumb]:rounded-full
+          dark:[&::-webkit-scrollbar-track]:bg-zinc-50
+          dark:[&::-webkit-scrollbar-thumb]:bg-purble-hover">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-8">
+            <div className="flex items-center justify-center gap-8">
               <h1 className="text-3xl text-zinc-700 font-bold">Membros cadastrados</h1>
               
               <Input 
@@ -30,7 +33,7 @@ export function Tithers(){
               <Button
                 label="Novo membro"
                 color="purple"
-                padding="2"
+                padding="3"
                 onClick={() => setOpen(true)}
               >
                 <Plus className="w-5 h-5"/>
@@ -40,16 +43,10 @@ export function Tithers(){
                 <h2 className="text-2xl text-zinc-700 font-bold">Cadastro de membro</h2>
             
                 <div className="mt-5 flex flex-col ">
-                    <label 
-                      htmlFor="name"
-                      className="text-zinc-700 font-semibold"
-                    >
-                      Nome
-                    </label>
-
                   <Input
                     id="name"
                     type="text"
+                    label="Nome"
                     placeholder="Digite o nome completo"
                     size="lg"
                   >
