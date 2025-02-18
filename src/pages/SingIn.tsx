@@ -3,6 +3,7 @@ import { Logo } from "../components/Logo"
 import { SingInPhone } from "../components/SingInPhone"
 import { Input } from "../components/Input"
 import { Button } from "../components/Button"
+import { PasswordInput } from "../components/PasswordInput"
 
 export function SingIn(){
   return(
@@ -25,20 +26,17 @@ export function SingIn(){
                 label="Usuário"
                 placeholder="Nome de usuário"
                 type="text"
-                size="full"
               >
                 <User className="w-5 h-5 text-zinc-500"/>
               </Input>
               
-              <Input
+              <PasswordInput
                 id="password"
                 label="Senha"
                 placeholder="Digite sua senha"
-                type="password"
-                size="full"
               >
                 <Lock className="w-5 h-5 text-zinc-500"/>
-              </Input>
+              </PasswordInput>
             </div>
 
             <Button 
@@ -49,7 +47,16 @@ export function SingIn(){
             />
           </form>
 
-          <span className="text-zinc-500 mt-5">Não tem conta? <a href="#" className="font-semibold text-zinc-700 hover:text-purple transition-all">Cadastre-se agora</a></span>
+          <span className="text-zinc-500 mt-5"
+          >
+            Não tem conta? 
+            <a 
+              href="?" 
+              className="font-semibold text-zinc-700 hover:text-purple transition-all"
+            >
+              Cadastre-se agora
+            </a>
+          </span>
         </div>
       </div>
     </div>

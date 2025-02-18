@@ -6,11 +6,10 @@ interface InputProps{
   children: ReactNode
   label?: string
   placeholder?: string
-  size?: string
   textSize?: string
 }
 
-export const Input: FunctionComponent<InputProps> = ({children, textSize, placeholder, type, label, size, id,  ...rest }) => {
+export const Input: FunctionComponent<InputProps> = ({children, textSize, placeholder, type, label, id,  ...rest }) => {
   return(
     <div className="flex flex-col gap-1">
       <label 
@@ -22,7 +21,7 @@ export const Input: FunctionComponent<InputProps> = ({children, textSize, placeh
       <div className="flex items-center gap-2 border-1 border-zinc-300 rounded-md p-3">
         {children}
         <input 
-          className={`w-${size} outline-0 text-${textSize} text-zinc-700`}
+          className={`w-sm outline-0 text-${textSize} text-zinc-700`}
           placeholder={placeholder} 
           type={type}
           id={id}

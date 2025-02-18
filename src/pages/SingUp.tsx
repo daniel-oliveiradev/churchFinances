@@ -3,6 +3,7 @@ import { Logo } from "../components/Logo";
 import { SingUpPhone } from "../components/SingUpPhone";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
+import { PasswordInput } from "../components/PasswordInput";
 
 export function SingUp(){
   return(
@@ -19,37 +20,32 @@ export function SingUp(){
               type="text"
               label="Nome"
               placeholder="Digite o nome completo"
-              size="full"
             >
               <UserRound className="w-5 h-5 text-zinc-500"/>
             </Input>
             <Input
-              id="name"
-              type="text"
-              label="Nome"
-              placeholder="Digite o nome completo"
-              size="full"
+              id="email"
+              type="email"
+              label="E-mail"
+              placeholder="Digite um e-mail"
             >
               <AtSign className="w-5 h-5 text-zinc-500"/>
             </Input>
             <Input
-              id="name"
+              id="nickname"
               type="text"
-              label="Nome"
-              placeholder="Digite o nome completo"
-              size="full"
+              label="Usuário"
+              placeholder="Digite o nome de usuário"
             >
               <CircleUserRound className="w-5 h-5 text-zinc-500"/>
             </Input>
-            <Input
-              id="name"
-              type="text"
-              label="Nome"
-              placeholder="Digite o nome completo"
-              size="full"
+            <PasswordInput
+              id="password"
+              label="Senha"
+              placeholder="Digite sua senha"
             >
               <Lock className="w-5 h-5 text-zinc-500"/>
-            </Input>
+            </PasswordInput>
 
             <Button 
               label="Cadastrar"
